@@ -34,6 +34,11 @@ class ControllerInvoker implements InvocationStrategyInterface
         ResponseInterface $response,
         array $routeArguments
     ): ResponseInterface {
+        // set request and response on base controller if init method exists
+        if (isset($callable[0]) && method_exists($callable[0], 'init')) {
+            $callable[0]->init($request, $response);
+        }
+
         // Inject the request and response by parameter name
         $parameters = [
             'request'  => self::injectRouteArguments($request, $routeArguments),

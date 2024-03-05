@@ -1,3 +1,7 @@
+# PHP-DI integration with Slim with Controller
+
+This package is dron-in-replacement of PHP-DI/Slim-Bridge with Controller
+
 # PHP-DI integration with Slim
 
 This package configures Slim to work with the [PHP-DI container](http://php-di.org/).

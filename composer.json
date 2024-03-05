@@ -1,6 +1,6 @@
 {
-    "name": "php-di/slim-bridge",
-    "description": "PHP-DI integration in Slim",
+    "name": "ifyazilim/slim-bridge-with-controller",
+    "description": "PHP-DI integration in Slim with Controller",
     "license": "MIT",
     "type": "library",
     "autoload": {
